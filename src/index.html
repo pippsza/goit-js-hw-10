@@ -8,16 +8,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 40px;
+        gap: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        background-color: pink;
+        border: solid black 1px;
+      }
+    </style>
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <a href="./1-timer.html"> first page</a>
+      <a href="./2-snackbar.html"> second page</a>
     </main>
-
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
   </body>
 </html>
