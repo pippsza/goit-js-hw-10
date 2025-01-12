@@ -30,9 +30,6 @@ flatpickr(dataPicker, {
     }
     this.clickOpens;
     deadline = selectedDates[0];
-    console.dir(selectedDates[0]);
-    console.log(dateStr);
-    console.log(instance);
   },
 });
 
@@ -68,9 +65,8 @@ const timer = {
 
   stop() {
     clearInterval(this.intervalId);
-    button.disabled = false;
+
     dataPicker.disabled = false;
-    console.log('timer stopped');
   },
 
   getTimeComponents(diff) {
